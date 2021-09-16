@@ -384,11 +384,43 @@ namespace Address
 
 
             String text = "";
+
+            Console.WriteLine("Server:");
             for (int i = 0; i < 4; i++)
             {
                 text = text + "." + Server_result_dec[i];
             }
-            Console.WriteLine(text);
+            String newText = text.Substring(1, text.Length - 1);
+            Console.WriteLine("Server NetAddr:{0}",newText);
+
+            text = "";
+            for (int i = 4; i < 8; i++)
+            {
+                text = text + "." + Client_result_dec[i];
+            }
+            newText = text.Substring(1, text.Length - 1);
+
+            Console.WriteLine("Client NetAddr:{0}", newText);
+
+            text = "";
+            Console.WriteLine();
+            Console.WriteLine("Client:");
+            for (int i = 4; i < 8; i++)
+            {
+                text = text + "." + Server_result_dec[i];
+            }
+            newText = text.Substring(1, text.Length - 1);
+
+            Console.WriteLine("Server NetAddr:{0}", newText);
+
+            text = "";
+            for (int i = 0; i < 4; i++)
+            {
+                text = text + "." + Client_result_dec[i];
+            }
+            newText = text.Substring(1, text.Length - 1);
+
+            Console.WriteLine("Client NetAddr:{0}", newText);
         }
     }
 }
