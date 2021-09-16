@@ -1,0 +1,16 @@
+C:\Users\yumes\Documents\Project\C#\Address\bin\Debug\net5.0\Address.exe
+C:\Users\yumes\Documents\Project\C#\Address\bin\Debug\net5.0\Address.deps.json
+C:\Users\yumes\Documents\Project\C#\Address\bin\Debug\net5.0\Address.runtimeconfig.json
+C:\Users\yumes\Documents\Project\C#\Address\bin\Debug\net5.0\Address.runtimeconfig.dev.json
+C:\Users\yumes\Documents\Project\C#\Address\bin\Debug\net5.0\Address.dll
+C:\Users\yumes\Documents\Project\C#\Address\bin\Debug\net5.0\ref\Address.dll
+C:\Users\yumes\Documents\Project\C#\Address\bin\Debug\net5.0\Address.pdb
+C:\Users\yumes\Documents\Project\C#\Address\obj\Debug\net5.0\Address.csproj.AssemblyReference.cache
+C:\Users\yumes\Documents\Project\C#\Address\obj\Debug\net5.0\Address.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yumes\Documents\Project\C#\Address\obj\Debug\net5.0\Address.AssemblyInfoInputs.cache
+C:\Users\yumes\Documents\Project\C#\Address\obj\Debug\net5.0\Address.AssemblyInfo.cs
+C:\Users\yumes\Documents\Project\C#\Address\obj\Debug\net5.0\Address.csproj.CoreCompileInputs.cache
+C:\Users\yumes\Documents\Project\C#\Address\obj\Debug\net5.0\Address.dll
+C:\Users\yumes\Documents\Project\C#\Address\obj\Debug\net5.0\ref\Address.dll
+C:\Users\yumes\Documents\Project\C#\Address\obj\Debug\net5.0\Address.pdb
+C:\Users\yumes\Documents\Project\C#\Address\obj\Debug\net5.0\Address.genruntimeconfig.cache
