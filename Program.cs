@@ -384,43 +384,47 @@ namespace Address
 
 
             String text = "";
+            String newText = "";
+            List<String> result = new List<string>();
+
+            for (int i = 0; i < 8; i+=4)
+            {
+                for (int j = i;j<i+4;j++)
+                {
+                    text = text + "." + Server_result_dec[j];
+                    newText = text.Substring(1, text.Length - 1);
+                }
+                result.Add(newText);
+                text = "";
+                newText = "";
+                for (int k = i; k < i + 4; k++)
+                {
+                    text = text + "." + Client_result_dec[k];
+                    newText = text.Substring(1, text.Length - 1);
+                }
+                result.Add(newText);
+                text = "";
+                newText = "";
+            }
+
 
             Console.WriteLine("Server:");
-            for (int i = 0; i < 4; i++)
-            {
-                text = text + "." + Server_result_dec[i];
-            }
-            String newText = text.Substring(1, text.Length - 1);
-            Console.WriteLine("Server NetAddr:{0}",newText);
-
-            text = "";
-            for (int i = 4; i < 8; i++)
-            {
-                text = text + "." + Client_result_dec[i];
-            }
-            newText = text.Substring(1, text.Length - 1);
-
-            Console.WriteLine("Client NetAddr:{0}", newText);
-
-            text = "";
+            Console.WriteLine("Server NetAddr:{0}", result[0]);
+            Console.WriteLine("Client NetAddr:{0}", result[3]);
             Console.WriteLine();
             Console.WriteLine("Client:");
-            for (int i = 4; i < 8; i++)
+            Console.WriteLine("Server NetAddr:{0}", result[1]);
+            Console.WriteLine("Client NetAddr:{0}", result[2]);
+            Console.WriteLine();
+
+            if (result[0] == result[3])
             {
-                text = text + "." + Server_result_dec[i];
+                Console.WriteLine("Congratulation! The two machines can ping each other!");
             }
-            newText = text.Substring(1, text.Length - 1);
-
-            Console.WriteLine("Server NetAddr:{0}", newText);
-
-            text = "";
-            for (int i = 0; i < 4; i++)
+            else
             {
-                text = text + "." + Client_result_dec[i];
+                Console.WriteLine("try again!");
             }
-            newText = text.Substring(1, text.Length - 1);
-
-            Console.WriteLine("Client NetAddr:{0}", newText);
         }
     }
 }
