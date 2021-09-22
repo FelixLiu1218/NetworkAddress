@@ -407,7 +407,16 @@ namespace Address
                 newText = "";
             }
 
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.Write("Server:");
+            Console.Write(Server.getIp().PadRight(15));
+            Console.WriteLine(Server.getSub());
+            Console.Write("Client:");
+            Console.Write(Client.getIp().PadRight(15));
+            Console.WriteLine(Server.getSub());
 
+            Console.WriteLine();
             Console.WriteLine("Server:");
             Console.WriteLine("Server NetAddr:{0}", result[0]);
             Console.WriteLine("Client NetAddr:{0}", result[3]);
@@ -416,6 +425,7 @@ namespace Address
             Console.WriteLine("Server NetAddr:{0}", result[1]);
             Console.WriteLine("Client NetAddr:{0}", result[2]);
             Console.WriteLine();
+
 
             if (result[0] == result[3])
             {
